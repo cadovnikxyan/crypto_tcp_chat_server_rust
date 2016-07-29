@@ -6,7 +6,7 @@ use std::thread;
 use std::io::prelude::*;
 use std::net::{TcpListener,TcpStream};
 use self::ini::Ini;
-use self::crypto;
+
 
 struct chat_client{
 	 client:  TcpStream,
@@ -45,6 +45,7 @@ pub fn server_start(){
 	server.init();
 	// let mut clients : HashMap<chat_client,String> = HashMap::new();
 	let listener = TcpListener::bind("localhost:3333").unwrap();
+	println!("server is start on host: {} and port: {}",server.server_addr,server.server_port);
 	for stream in listener.incoming(){
 		match stream{
 			Ok(stream)=>{

@@ -1,9 +1,6 @@
-#[warn(unused_imports)]
-#[warn(unused_must_use)]
 
-
-extern crate chat_server;
-use chat_server;
+extern crate crypto_tcp_chat_server;
+use crypto_tcp_chat_server::chat_server;
 
 
 fn main(){

@@ -8,3 +8,5 @@ authors = ["ahotchenkov <hotchenkov@list.ru>"]
 [dependencies]
 rust-crypto = "0.2.36"
 rust-ini = "*"
+mio = "*"
+bytes="0.2.11"
